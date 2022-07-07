@@ -1,0 +1,1 @@
+web: qunicorn django_movie.wsgi --log-file -
