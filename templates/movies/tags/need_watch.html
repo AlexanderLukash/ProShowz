@@ -1,0 +1,26 @@
+{% for movie in need_movies %}
+    <div class="item">
+        <div class="two-gridshny-grids">
+            <div class="two-gridshny-left">
+                <div class="box16 mb-4">
+                    <a href="{{ movie.get_absolute_url }}">
+                        <figure>
+                            <img class="img-fluid" src="{{ movie.banner.url }}" alt="">
+                        </figure>
+                        <div class="box-content">
+                            <h4><span class="post"><span
+                                    class="fa fa-clock-o"></span> {{ movie.time_h }} Hr {{ movie.time_m }}min </span>
+
+                                <span class="post fa fa-heart text-right"></span>
+                            </h4>
+                        </div>
+                        <span class="fa fa-play video-icon" aria-hidden="true"></span>
+                    </a>
+                </div>
+            </div>
+            <div class="two-gridshny-right">
+                <h3><a class="title-gd mt-0" href="{{ movie.get_absolute_url }}">{{ movie.title }}</a></h3>
+            </div>
+        </div>
+    </div>
+{% endfor %}

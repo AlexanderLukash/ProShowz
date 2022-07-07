@@ -1,0 +1,25 @@
+{% for movie in last_movies %}
+<div class="item vhny-grid">
+    <div class="box16 mb-0">
+        <a href="{{ movie.get_absolute_url }}">
+            <figure>
+                <img class="img-fluid" src="{{ movie.poster.url }}" alt="">
+            </figure>
+            <div class="box-content">
+                <h4> <span class="post"><span class="fa fa-clock-o"> </span>  {{ movie.time_h }} Год {{movie.time_m}}хв
+
+										</span>
+
+                    <span class="post fa fa-heart text-right"></span>
+                </h4>
+            </div>
+            <span class="fa fa-play video-icon" aria-hidden="true"></span>
+        </a>
+    </div>
+    <h3><a class="title-gd" href="genre.html">{{ movie.title }}</a></h3>
+    <p>{{ movie.description_small }}</p>
+    <div class="button-center text-center mt-4">
+        <a href="{{ movie.get_absolute_url }}" class="btn watch-button">Дивитися</a>
+    </div>
+</div>
+{% endfor %}

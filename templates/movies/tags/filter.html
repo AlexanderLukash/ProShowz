@@ -1,0 +1,43 @@
+{% url 'get_ganresl %}
+<section class="w3l-grids">
+    <div class="grids-main py-5">
+        <div class="container py-lg-3">
+            <div class="headerhny-title">
+                <div class="w3l-title-grids">
+                    <div class="headerhny-left">
+
+                        <h3 class="hny-title">Фільми в жанрі {{ ganre.name }}</h3>
+
+                    </div>
+                    <div class="headerhny-right text-lg-right">
+                        <h4><a class="show-title" href="../../">Показати все</a></h4>
+                    </div>
+                </div>
+            </div>
+            <div class="w3l-populohny-grids">
+                {% for movie in movie_list %}
+                    <div class="item vhny-grid">
+                        <div class="box16">
+                            <a href="{{ movie.get_absolute_url }}">
+                                <figure>
+                                    <img class="img-fluid" src="{{ movie.poster.url }}" alt="">
+                                </figure>
+                                <div class="box-content">
+                                    <h3 class="title">{{ movie.title }}</h3>
+                                    <h4> <span class="post"><span
+                                            class="fa fa-clock-o"> </span> {{ movie.time_h }} Год {{ movie.time_m }}хв
+
+										</span>
+
+                                        <span class="post fa fa-heart text-right"></span>
+                                    </h4>
+                                </div>
+                                <span class="fa fa-play video-icon" aria-hidden="true"></span>
+                            </a>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>

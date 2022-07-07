@@ -1,0 +1,5 @@
+{% for movie in random_banner %}
+<div class="col-md-3 col-6 footer-img mb-lg-0 mb-4">
+    <a href="{{ movie.get_absolute_url }}"><img class="img-fluid" src="{{ movie.banner.url }}" alt=""></a>
+</div>
+{% endfor %}

@@ -1,0 +1,21 @@
+{% load static %}
+{% load movie_tag %}
+{% for ganre in random_ganre %}
+    <div class="item vhny-grid">
+        <div class="box16">
+            <a href="{{ ganre.get_absolute_url }}">
+                <figure>
+                    {% get_random_ganre_banner %}
+                </figure>
+                <div class="box-content">
+                    <h3 class="title">{{ ganre.name }}</h3>
+                    <h4> <span class="post">{{ ganre.description }}</span>
+
+                        <span class="post fa fa-heart text-right"></span>
+                    </h4>
+                </div>
+                <span class="fa fa-play video-icon" aria-hidden="true"></span>
+            </a>
+        </div>
+    </div>
+{% endfor %}

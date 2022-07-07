@@ -1,0 +1,20 @@
+{% load static %}
+{% for review in review_list %}
+<div class="item">
+    <div class="testimonial-content">
+        <div class="testimonial">
+            <blockquote>
+                <q>{{ review.text }} </q>
+            </blockquote>
+            <div class="testi-des">
+                <div class="test-img"><img src="{% static 'images/149071.png' %}" class="img-fluid" alt="/">
+                </div>
+                <div class="peopl align-self">
+                    <h3>{{ review.name }} {{ review.last_name }}</h3>
+                    <p class="indentity">{{ review.loc }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endfor %}

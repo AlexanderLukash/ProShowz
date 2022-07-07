@@ -1,0 +1,20 @@
+{% for movie in random_movies %}
+<div class="item">
+    <li>
+        <div class="slider-info bg bg2">
+            <div class="container">
+                <img src="{{ movie.banner.url }}" alt="" class="banner_img" height="600">
+                <div class="mid-info">
+
+
+                    <h3>{{ movie.title }}</h3>
+                    <p>{{ movie.year }} ‧ {{ movie.time_h }}h {{ movie.time_m }}m</p>
+                    <a class="watch" href="{{ movie.get_absolute_url }}"><span class="fa fa-play"
+                                                                               aria-hidden="true"></span>
+                        Дивитися трейлер</a>
+                </div>
+            </div>
+        </div>
+    </li>
+</div>
+{% endfor %}

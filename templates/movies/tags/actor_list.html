@@ -1,0 +1,16 @@
+{% for actor in random_actor %}
+<div class="item vhny-grid">
+    <div class="d-grid team-info">
+        <div class="column position-relative">
+            <a
+                    href="{% url 'actors_details' actor.name %}"><img src="{{ actor.image.url }}" alt=""
+                                                                      class="image-fuild"
+                                                                      height="400"></a>
+        </div>
+        <div class="column text-center">
+            <h3 class="name-pos"><a href="#url">{{ actor.name }}</a></h3>
+
+        </div>
+    </div>
+</div>
+{% endfor %}
