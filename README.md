@@ -1,13 +1,28 @@
 # ProShowz
+#### A site for watching movies, series and cartoons.
+###### My Django practice project.
+###### The design was created by: [W3layouts](https://w3layouts.com/ "Go to the site")
 
-### My Django practice project.
+<img src="/Screenshots/Thumbnail1.jpg">
 
-A site for watching movies, series and cartoons. This site has its own database, the ability to send reviews and, unfortunately, has no other localizations except Ukrainian.
+<h2>Technologies Used:</h2>
+<ul>
+    <li>Python</li>
+    <li>Django</li>
+    <li>Bootstrap</li>
+    <li>JavaScript</li>
+</ul>
 
-### Link: [ProShowz](https://proshowz.herokuapp.com/ "Go to the site")
-
-#### The design was created by: [W3layouts](https://w3layouts.com/ "Go to the site")
-
+### Implemented systems:
++ Login
++ Register
++ Comment and feedback system
++ Integration of reCAPTCHA
++ Ability to add, edit and delete posts
++ Searching system
++ Profile system
++ And some other things...
+  
 ### Screenshots: 
 
 ![](https://github.com/AlexanderLukash/proshowzserver/blob/main/Screenshots/brave_X0odMvBaNH.png?raw=true)
@@ -30,5 +45,5 @@ ___
 
   #### Link: https://war.ukraine.ua/donate/
 
-  ##### 💙💛 Glory To Ukraine 💙💛
+  ###### 💙💛 Glory To Ukraine 💙💛
 
